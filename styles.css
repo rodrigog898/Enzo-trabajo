@@ -1,0 +1,141 @@
+/* Estilo global */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/fondo.png') !important;
+    background-size: cover; /* Para ajustar la imagen al tamaño de la ventana */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+
+}
+
+
+
+
+#navbar {
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    width: 100%;
+    background-color: transparent;
+    
+}
+
+/* Estilo para el fondo negro al desplazarse */
+#navbar.scrolled {
+    background-color: #000000;
+}
+
+.logo {
+    width: 500px; 
+    height: auto; 
+}
+/* Estilo del carrusel */
+.carousel {
+    background: transparent; /* Fondo negro para el carrusel */
+    z-index: 1;
+    position: relative;
+}
+
+/* Estilo de las imágenes dentro del carrusel */
+.carousel-inner img {
+    width: 100%; /* Asegura que todas las imágenes tengan el mismo ancho */
+    height: auto; /* Mantiene la proporción original */
+}
+
+/* Cambia el color de los indicadores y las flechas (opcional) */
+.carousel-indicators li {
+    background-color: #fff; /* Color de los indicadores */
+}
+
+.carousel-control {
+    color: #fff; /* Color de las flechas */
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px; /* Ajusta el espacio superior según tus preferencias */
+}
+
+h1 {
+    
+    font-family: 'Showcard Gothic';
+    font-size: 100.5em;
+    color: #000000;
+    font-weight:bolder ; 
+    text-align: center;
+
+}
+
+/* Estilo para la nueva sección */
+.my-work-section {
+    text-align: center;
+    margin-top: 20px; /* Ajusta el espacio superior según tus preferencias */
+}
+
+/* Estilo para la imagen */
+.my-work-section img {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+   
+}
+
+
+  
+.card {
+    max-width: 500px;
+    height: 300px;
+    padding: 35px;
+    margin-bottom: 20px; /* Agrega espacio hacia abajo entre las tarjetas */
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    background-color: rgb(116, 116, 116);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+}
+
+.texto11{
+    font-family: 'calibri';
+    font-size: 1em;
+    color: white;
+    font-weight:bolder; 
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 0px;
+}
+#pie{
+    background:black;
+    height: 70px;
+    font-family: 'Open Sans', Arial;
+    color: #000000;
+    width: 100%;
+}
+  
+.btn-volver {
+    position: absolute;
+    left: 20px; /* Posición a la izquierda */
+    top: 20px; /* Posición arriba */
+    background-color: #007BFF; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
